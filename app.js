@@ -9,7 +9,18 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.render('index')
+  const content = {
+    string: `首頁`
+  }
+  res.render('index', { content })
+})
+
+app.get('/:btn_name', (req, res) => {
+
+  const content = {
+    string: `${req.params.btn_name}`
+  }
+  res.render('index', { content })
 })
 
 app.listen(port, () => {

@@ -11,21 +11,31 @@
 
 <body>
 
-  <div>
+  <div class="d-flex justify-content-between m-5">
+    <a href="/" class="text-decoration-none">
+      <div>
+        <button type="button" class="btn btn-secondary btn-lg">回到首頁</button>
+      </div>
+    </a>
+
     <div>
-      <button type="button" class="btn btn-primary">回到首頁</button>
+      <a href="/about" class="text-decoration-none mx-1">
+        <button type="button" class="btn btn-secondary btn-lg">About</button>
+      </a>
+      <a href="/portfolio" class="text-decoration-none mx-1">
+        <button type="button" class="btn btn-secondary btn-lg">Portfolio</button>
+      </a>
+      <a href="/contact" class="text-decoration-none mx-1">
+        <button type="button" class="btn btn-secondary btn-lg">Contact</button>
+      </a>
     </div>
-    <div>
-      <button type="button" class="btn btn-primary">About</button>
-      <button type="button" class="btn btn-primary">Portfolio</button>
-      <button type="button" class="btn btn-primary">Contact</button>
-    </div>
-    <script src="/javascripts/popper.js"></script>
-    <script src="/javascripts/bootstrap.js"></script>
+  </div>
+  <div class="m-5 p-2">
+    {{{body}}}
   </div>
 
-  {{{body}}}
-
+    <script src="/javascripts/popper.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
 </body>
 
 </html>
