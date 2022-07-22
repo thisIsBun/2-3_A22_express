@@ -21,5 +21,5 @@
        
 5. 若在終端機看到以下訊息，表示專案可在本機運行了，即可開啟瀏覽器檢視專案 (http://localhost:3000) 
    ```
-   Express is now listening to http://localhost:3000
+   Activate http://localhost:3000
    ```
